@@ -1,5 +1,6 @@
 import React from "react";
 import { ListGroup } from "react-bootstrap";
+import "./home.css";
 
 class Home extends React.Component {
     render() {
@@ -10,20 +11,20 @@ class Home extends React.Component {
                         <p style={{ fontWeight: "bold" }}>iPod</p>
                         <img
                             style={styles.battery}
-                            src="https://image.flaticon.com/icons/svg/3103/3103446.svg"
+                            src="https://cdn-icons.flaticon.com/png/512/664/premium/664883.png?token=exp=1649671360~hmac=ecb60bca60d4c44af4c9d7a937556764"
                         ></img>
                     </div>
                     <ListGroup style={{ borderRadius: "0" }}>
                         <ListGroup.Item
                             style={{ border: "0", padding: "0.2rem 0.6rem" }}
                             className={
-                                this.props.activeItem === "NowPlaying"
+                                this.props.activeItem === "CoverFlow"
                                     ? "active"
                                     : ""
                             }
                         >
-                            Now Playing{" "}
-                            {this.props.activeItem === "NowPlaying" ? (
+                            Cover Flow{" "}
+                            {this.props.activeItem === "CoverFlow" ? (
                                 <span
                                     style={{
                                         float: "right",
@@ -118,7 +119,7 @@ const styles = {
         flexDirecton: "row",
     },
     menuList: {
-        //border:'1px solid black',
+        // border: "1px solid black",
         height: "100%",
         width: "50%",
         boxShadow: "10px 0px 15px -5px rgba(0,0,0,0.75)",
@@ -136,7 +137,7 @@ const styles = {
     },
     titleBar: {
         height: "10%",
-        width: "100%",
+        width: "93%",
         borderRadius: "12px 0 0 0",
         backgroundImage:
             "linear-gradient(0deg, rgb(123, 132, 140), transparent)",
@@ -145,6 +146,7 @@ const styles = {
         display: "flex",
         flexDirecton: "row",
         justifyContent: "space-between",
+        alignItems: "center",
     },
     battery: {
         width: "20px",

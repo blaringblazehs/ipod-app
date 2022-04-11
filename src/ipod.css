@@ -1,19 +1,20 @@
 .ipod-container {
     height: 33rem;
     width: 20rem;
-    background-image: radial-gradient(#adb1b5, #4d4f50);
+    background-image: radial-gradient(#9ca6ae, #b5bbc0);
     margin: 4rem auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 24px;
+    border: 2px solid darkgrey;
 }
 .wheel {
     width: 75%;
     height: 40%;
     margin: 1rem auto;
-    background-color: #4b4e52;
+    background-color: #54565a;
     border-radius: 50%;
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@
     justify-content: center;
 }
 .button-container {
-    width: 100%;
+    width: 90%;
     /* height: 30%; */
     border-radius: 100%;
     display: flex;
