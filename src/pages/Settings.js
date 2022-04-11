@@ -1,5 +1,5 @@
 import React from "react";
-import setting from "./assets/images/setting.png";
+import setting from "../assets/images/setting.png";
 
 class Settings extends React.Component {
     render() {

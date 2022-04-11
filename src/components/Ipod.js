@@ -1,8 +1,8 @@
 import React from "react";
-import Screen from "./Screen";
+import Screen from "../pages/Screen";
 import "./ipod.css";
 import ZingTouch from "zingtouch";
-import sound from "./assets/music/Senorita.mp3";
+import sound from "../assets/music/Senorita.mp3";
 class Ipod extends React.Component {
     constructor() {
         super();

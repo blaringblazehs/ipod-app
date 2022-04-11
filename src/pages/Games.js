@@ -1,5 +1,5 @@
 import React from "react";
-import game from "./assets/images/game.png";
+import game from "../assets/images/game.png";
 
 class Games extends React.Component {
     render() {
