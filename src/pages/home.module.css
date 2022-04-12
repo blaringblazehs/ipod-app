@@ -1,0 +1,40 @@
+.active {
+    background-color: blue;
+    color: white;
+}
+.homeScreen {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.menuList {
+    height: 100%;
+    width: 50%;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.75);
+    z-index: 1;
+}
+.imageContainer {
+    height: 100%;
+    width: 50%;
+    background-image: url("https://i.pinimg.com/originals/b5/ca/9a/b5ca9a6c64b6a5c445dc993dd6294d10.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 12px 12px 0;
+}
+.titleBar {
+    height: 10%;
+    width: 93%;
+    border-radius: 12px 0 0 0;
+    background-image: linear-gradient(0deg, rgb(123, 132, 140), transparent);
+    border-bottom: 1px solid #6c757d;
+    padding: 1px 5px 10px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.battery {
+    width: 20px;
+    height: 20px;
+}

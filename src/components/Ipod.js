@@ -6,6 +6,7 @@ import sound from "../assets/music/Senorita.mp3";
 class Ipod extends React.Component {
     constructor() {
         super();
+        //state
         this.state = {
             activeItem: "CoverFlow",
             activePage: "Home",
@@ -13,10 +14,11 @@ class Ipod extends React.Component {
             play: true,
         };
     }
+    // this function runs when the user drags the mouse on wheel in circular fashion
     rotateWheel = () => {
         var containerElement = document.getElementById("inner-container");
         var activeRegion = new ZingTouch.Region(containerElement);
-        // var childElement = document.getElementById('inner-container');
+
         var change = 0;
         var self = this;
         self.state.enter = self.state.enter + 1;
@@ -86,21 +88,21 @@ class Ipod extends React.Component {
             console.log("Not allowed to enter");
         }
     };
-
+    //change the page in home screen
     changePage = () => {
         this.setState({
             activeItem: this.state.activeItem,
             activePage: this.state.activeItem,
         });
     };
-
+    //navigate to homescreen from any other screen
     changePageToHomeScreen = () => {
         this.setState({
             activeItem: this.state.activeItem,
             activePage: "Home",
         });
     };
-
+    //play or pause the music using toggle
     toggle = () => {
         if (this.state.activePage === "Music") {
             if (this.state.play === true) {
@@ -117,6 +119,7 @@ class Ipod extends React.Component {
             console.log("toggled");
         }
     };
+    // when the app loads up
     componentDidMount() {
         let audio = document.getElementsByClassName("audio-element")[0];
         console.log(audio);

@@ -1,0 +1,65 @@
+.myMusicContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    height: 75%;
+    width: 45%;
+    align-self: center;
+}
+.info {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.statusBar {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.subInfo {
+    align-self: center;
+}
+.seekBar {
+    width: 70%;
+    height: 6%;
+    border: 2px solid grey;
+    cursor: pointer;
+    align-self: center;
+    display: flex;
+}
+.fill {
+    height: 100%;
+    background-color: royalblue;
+}
+.currTime {
+    margin: 0;
+    align-self: center;
+}
+.dur {
+    margin: 0;
+    align-self: center;
+}
+.titleBar {
+    height: 10%;
+    width: 96.6%;
+    border-radius: 12px 0 0 0;
+    background-image: linear-gradient(0deg, rgb(123, 132, 140), transparent);
+    border-bottom: 1px solid #6c757d;
+    padding: 1px 5px 10px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.battery {
+    width: 20px;
+    height: 20px;
+}
